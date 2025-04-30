@@ -1,0 +1,58 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1e1b4b, #4c1d95, #831843);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.content {
+  max-width: 56rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.loginButton {
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  background-color: white;
+  color: #a855f7;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.loginButton:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.signupButton {
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  background-color: #a855f7;
+  color: white;
+  font-weight: 600;
+  border: 2px solid white;
+  transition: background-color 0.2s;
+}
+
+.signupButton:hover {
+  background-color: #9333ea;
+} 

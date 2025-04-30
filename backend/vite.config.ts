@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { VitePluginNode } from 'vite-plugin-node'
 
 export default defineConfig({
   server: {
@@ -14,5 +15,13 @@ export default defineConfig({
       },
       external: ['express', 'cors', 'dotenv']
     }
-  }
+  },
+  plugins: [
+    ...VitePluginNode({
+      adapter: 'express',
+      appPath: './src/index.ts',
+      exportName: 'app',
+      tsCompiler: 'esbuild'
+    })
+  ]
 }) 
